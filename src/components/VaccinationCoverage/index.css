@@ -1,0 +1,131 @@
+/* Write your CSS here */
+/* index.css */
+
+.vaccination-by-coverage-container {
+  background-color: #1c1c2b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.vaccination-by-coverage-heading {
+  color: #94a3b8;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Base chart responsiveness */
+.recharts-wrapper {
+  width: 100% !important;
+  min-width: 300px; /* Minimum width before scrolling */
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+/* Axis styling */
+.recharts-cartesian-axis-tick {
+  font-size: 12px;
+}
+
+/* Legend adjustments */
+.recharts-legend-wrapper {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.recharts-legend-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 15px !important;
+}
+
+/* Bar chart specific responsive styles */
+.recharts-bar-rect {
+  transition: all 0.3s ease;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 1200px) {
+  .recharts-cartesian-axis-tick {
+    font-size: 11px;
+  }
+  
+  .recharts-legend-item {
+    margin: 0 10px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .vaccination-by-coverage-heading {
+    font-size: 22px;
+  }
+  
+  .recharts-bar {
+    bar-size: 25% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vaccination-by-coverage-container {
+    padding: 15px;
+  }
+
+  .vaccination-by-coverage-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .recharts-cartesian-axis-tick {
+    font-size: 10px;
+  }
+
+  .recharts-legend-wrapper {
+    padding-top: 10px !important;
+  }
+
+  .recharts-legend-item {
+    font-size: 11px !important;
+    margin: 0 8px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vaccination-by-coverage-container {
+    padding: 12px;
+  }
+
+  .vaccination-by-coverage-heading {
+    font-size: 18px;
+  }
+
+  .recharts-cartesian-axis-tick {
+    font-size: 9px;
+  }
+
+  .recharts-legend-item {
+    font-size: 10px !important;
+    margin: 0 5px !important;
+  }
+
+  .recharts-bar {
+    bar-size: 30% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vaccination-by-coverage-heading {
+    font-size: 16px;
+  }
+
+  .recharts-cartesian-axis-tick {
+    font-size: 8px;
+  }
+
+  .recharts-legend-item {
+    font-size: 9px !important;
+    margin: 0 3px !important;
+  }
+}

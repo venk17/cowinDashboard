@@ -1,0 +1,116 @@
+/* Write your CSS here */
+/* index.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #161625;
+  padding: 20px;
+}
+
+.cowin-dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.logo-heading {
+  color: #2cc6c6;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.heading {
+  color: #cbd5e1;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loading-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.failure-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.failure-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-heading {
+    font-size: 18px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .app-container {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo-heading {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .app-container {
+    padding: 10px;
+  }
+
+  .failure-text {
+    font-size: 16px;
+    text-align: center;
+  }
+}

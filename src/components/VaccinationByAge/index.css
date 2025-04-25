@@ -1,0 +1,71 @@
+/* Write your CSS here */
+/* index.css */
+
+.vaccination-by-age-container {
+  background-color: #1c1c2b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.vaccination-by-age-heading {
+  color: #94a3b8;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for PieChart */
+.recharts-wrapper {
+  width: 100% !important;
+}
+
+.recharts-surface {
+  width: 100% !important;
+  overflow: visible;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+  .vaccination-by-age-container {
+    padding: 15px;
+  }
+
+  .vaccination-by-age-heading {
+    font-size: 20px;
+  }
+
+  .recharts-legend-wrapper {
+    width: 100% !important;
+    bottom: -10px !important;
+  }
+
+  .recharts-legend-item {
+    font-size: 10px !important;
+    margin-right: 8px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vaccination-by-age-container {
+    padding: 10px;
+  }
+
+  .vaccination-by-age-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .recharts-pie {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  .recharts-legend-wrapper {
+    bottom: -20px !important;
+  }
+
+  .recharts-legend-item {
+    font-size: 8px !important;
+    margin-right: 5px !important;
+  }
+}

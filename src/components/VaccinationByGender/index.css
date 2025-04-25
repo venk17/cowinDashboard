@@ -1,0 +1,108 @@
+/* Write your CSS here */
+/* index.css */
+
+.vaccination-by-gender-details {
+  background-color: #1c1c2b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.vaccination-by-gender-heading {
+  color: #94a3b8;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Base chart responsiveness */
+.recharts-wrapper {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.recharts-surface {
+  width: 100% !important;
+  height: auto !important;
+  overflow: visible;
+}
+
+/* Legend adjustments */
+.recharts-legend-wrapper {
+  width: 100% !important;
+}
+
+.recharts-legend-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-right: 15px !important;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 992px) {
+  .vaccination-by-gender-heading {
+    font-size: 22px;
+  }
+
+  .recharts-pie {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vaccination-by-gender-details {
+    padding: 15px;
+  }
+
+  .vaccination-by-gender-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .recharts-legend-wrapper {
+    bottom: -10px !important;
+  }
+
+  .recharts-legend-item {
+    font-size: 11px !important;
+    margin-right: 10px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vaccination-by-gender-details {
+    padding: 12px;
+  }
+
+  .vaccination-by-gender-heading {
+    font-size: 18px;
+  }
+
+  .recharts-pie {
+    transform: scale(0.8);
+  }
+
+  .recharts-legend-item {
+    font-size: 10px !important;
+    margin-right: 8px !important;
+  }
+
+  .recharts-legend-wrapper {
+    bottom: -15px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vaccination-by-gender-heading {
+    font-size: 16px;
+  }
+
+  .recharts-pie {
+    transform: scale(0.7);
+  }
+
+  .recharts-legend-item {
+    font-size: 9px !important;
+    margin-right: 5px !important;
+  }
+}
